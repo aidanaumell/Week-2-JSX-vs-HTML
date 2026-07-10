@@ -1,17 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Document basics — language, encoding, and browser tab title -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pricing Plans — HTML version</title>
+
+    <!-- Google Fonts: Inter (weights 400–700) — speeds up font loading -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Local stylesheet — all layout, color, and typography tokens -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+    <!-- Dev label — fixed badge showing this is the static HTML version -->
     <p class="page-label"><strong>HTML version</strong> — static markup</p>
+
+    <!-- Pricing cards row — horizontal flex container for all plan cards -->
     <div class="cards-container">
+
+        <!-- Hobby plan card -->
         <div class="card">
             <div class="card-top">
                 <h3 class="card-title">Hobby</h3>
@@ -36,8 +47,11 @@
                     </ul>
                 </div>
             </div>
+            <!-- Secondary CTA — light pill button -->
             <button class="download-button secondary">Download</button>
         </div>
+
+        <!-- Pro plan card -->
         <div class="card">
             <div class="card-top">
                 <h3 class="card-title">Pro</h3>
@@ -67,8 +81,73 @@
                     </ul>
                 </div>
             </div>
+            <!-- Primary CTA — dark pill button (emphasized plan) -->
             <button class="download-button primary">Get Pro</button>
         </div>
+
+        <!-- Business plan card -->
+        <div class="card">
+            <div class="card-top">
+                <h3 class="card-title">Business</h3>
+                <p class="card-price">
+                    <span class="card-price-amount">$40</span>
+                    <span class="card-price-period">/mo.</span>
+                </p>
+                <div class="card-content">
+                    <p class="includes-text">Everything in Pro, plus:</p>
+                    <ul class="features-list">
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Centralized team billing
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Admin dashboard with usage stats
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Org-wide privacy mode controls
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Secondary CTA — light pill button -->
+            <button class="download-button secondary">Get Business</button>
+        </div>
+
+        <!-- Enterprise plan card — copy any card block above to add more cards -->
+        <div class="card">
+            <div class="card-top">
+                <h3 class="card-title">Enterprise</h3>
+                <p class="card-price">
+                    <span class="card-price-amount">Custom</span>
+                </p>
+                <div class="card-content">
+                    <p class="includes-text">Everything in Business, plus:</p>
+                    <ul class="features-list">
+                        <li>
+                            <span class="checkmark">✓</span>
+                            SSO and SAML
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Dedicated account manager
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Custom invoicing
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Priority support and onboarding
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Secondary CTA — light pill button -->
+            <button class="download-button secondary">Contact sales</button>
+        </div>
+
     </div>
 </body>
 </html>
